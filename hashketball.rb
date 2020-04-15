@@ -138,9 +138,12 @@ def num_points_scored(player_name)
     data[:players].each do |player|
       if player[:player_name] == player_name
         player[:points] 
+        binkinh
     end
   end
 end
 
-def shoe_size(player)
+def shoe_size(player_name)
+  
+end 
   
