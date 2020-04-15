@@ -1,4 +1,8 @@
 # Write your code below game_hash
+# # irb
+# 2.6.1 :001 > require './hashketball.rb'
+# => true
+# 2.6.1 :002 >
 def game_hash
   {
     home: {
