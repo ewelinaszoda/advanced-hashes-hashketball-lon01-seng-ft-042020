@@ -178,7 +178,7 @@ end
 #     data[:players].each do |player, stats|
 #       if player[:player_name] == player_name
 #         player.delete(:player_name) 
-#         return data[stats]
+#         return stats
 #       end 
 #     end 
 #   end 
@@ -188,7 +188,7 @@ def player_stats(player_n)
   game_hash.each do |home_away, keys|
     keys[:players].each do |player|
       if player[:player_name] == player_n
-        return player.delete_if { |stat, value| [:player_name].include?(stat)}
+        return key[player]
       end
     end
   end
