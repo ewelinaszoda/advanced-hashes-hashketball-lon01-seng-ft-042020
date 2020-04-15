@@ -189,12 +189,3 @@ end
 #   end
 # end
 
-def player_stats(name)
-  game_hash.each do |team, team_data|
-    team_data.each do |team_datum, attribute|
-      if team_datum == :players && attribute.has_key?(name)
-        return attribute[name]
-      end
-    end
-  end
-end
