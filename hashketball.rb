@@ -134,9 +134,9 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.collect do |location, data|
-    if data[:players].include? (player_name)
-      return data[:players][player_name][:points]
+  game_hash.collect do |location, team_data|
+    if team_data[:players].include?(player_name)
+     return team_data[:players][player_name][:points]
     end 
   end
 end 
