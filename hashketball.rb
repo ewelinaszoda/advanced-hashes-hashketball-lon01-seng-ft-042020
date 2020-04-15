@@ -183,3 +183,8 @@ def player_stats(player_name)
   end 
 end 
 
+def big_shoe_rebounds
+  game_hash.find max shoe
+  return rebounds
+end 
+
