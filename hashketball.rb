@@ -4,7 +4,7 @@
 # => true
 # 2.6.1 :002 >
 
-reguire 'pry'
+require 'pry'
 
 def game_hash
   {
