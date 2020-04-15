@@ -3,6 +3,9 @@
 # 2.6.1 :001 > require './hashketball.rb'
 # => true
 # 2.6.1 :002 >
+
+reguire 'pry'
+
 def game_hash
   {
     home: {
@@ -131,9 +134,9 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  game_hash.map do |location, players|
-    if players.include? (player_name)
-      game_hash[location][players][points]
+  game_hash.collect do |location, data|
+    if data[:players].include? (player_name)
+      game_hash[data][:players][player_name][:points]
     end 
-  end 
+  end
 end 
